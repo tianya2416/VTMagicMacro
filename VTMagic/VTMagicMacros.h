@@ -5,7 +5,7 @@
 //  Created by tianzhuo on 15/1/6.
 //  Copyright (c) 2015年 tianzhuo. All rights reserved.
 //
-
+#import "BaseMacro.h"
 #ifndef VTMagicMacros_h
 #define VTMagicMacros_h
 
@@ -40,16 +40,13 @@
 colorWithRed:((float)((hexValue & 0xFF0000) >> 16))/255.0 \
 green:((float)((hexValue & 0xFF00) >> 8))/255.0 \
 blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
-
-// 判断设备是否是iPhone
 #define kiPhoneDevice ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone)
-#define KiPhoneX ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].size) : NO)
-#define KiPhoneXR ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(828, 1792), [[UIScreen mainScreen] currentMode].size) : NO)
-#define KiPhoneXMax ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(1242, 2688), [[UIScreen mainScreen] currentMode].size) : NO)
-#define iPhone_Bang (KiPhoneX  || KiPhoneXR || KiPhoneXMax)
+
 // tabbar高度
 #define VTTABBAR_HEIGHT (49)
 // 状态栏高度
-#define VTSTATUSBAR_HEIGHT (iPhone_Bang ? 44 : 20)
+#define VTSTATUSBAR_HEIGHT ( [BaseMacro iPhoneX] ? 44 : 20)
 
 #endif
+
+

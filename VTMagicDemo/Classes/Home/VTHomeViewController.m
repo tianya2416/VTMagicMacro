@@ -166,7 +166,7 @@
 }
 
 - (void)integrateComponents {
-    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 50, 30)];
+    UIButton *rightButton = [[UIButton alloc] initWithFrame:CGRectMake(0, 0, 44, 44)];
     [rightButton addTarget:self action:@selector(subscribeAction) forControlEvents:UIControlEventTouchUpInside];
     [rightButton setTitleColor:RGBACOLOR(169, 37, 37, 0.6) forState:UIControlStateSelected];
     [rightButton setTitleColor:RGBCOLOR(169, 37, 37) forState:UIControlStateNormal];
