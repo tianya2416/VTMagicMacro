@@ -1,13 +1,13 @@
 //
-//  BaseMacro.m
+//  VTMacro.m
 //  Pods-VTMagic
 //
 //  Created by wangws1990 on 2020/6/3.
 //
 
-#import "BaseMacro.h"
+#import "VTMacro.h"
 #import <UIKit/UIKit.h>
-@implementation BaseMacro
+@implementation VTMacro
 + (BOOL)iPhoneX{
     UIView *window = [UIApplication sharedApplication].delegate.window;
     if (@available(iOS 11.0, *)) {

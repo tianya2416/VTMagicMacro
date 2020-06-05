@@ -9,7 +9,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BaseMacro : NSObject
+@interface VTMacro : NSObject
 + (BOOL)iPhoneX;
 @end
 

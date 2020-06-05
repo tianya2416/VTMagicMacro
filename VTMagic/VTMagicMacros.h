@@ -5,7 +5,7 @@
 //  Created by tianzhuo on 15/1/6.
 //  Copyright (c) 2015年 tianzhuo. All rights reserved.
 //
-#import "BaseMacro.h"
+#import "VTMacro.h"
 #ifndef VTMagicMacros_h
 #define VTMagicMacros_h
 
@@ -45,7 +45,7 @@ blue:((float)(hexValue & 0xFF))/255.0 alpha:1.0]
 // tabbar高度
 #define VTTABBAR_HEIGHT (49)
 // 状态栏高度
-#define VTSTATUSBAR_HEIGHT ( [BaseMacro iPhoneX] ? 44 : 20)
+#define VTSTATUSBAR_HEIGHT ( [VTMacro iPhoneX] ? 44 : 20)
 
 #endif
 
