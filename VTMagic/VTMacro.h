@@ -10,7 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface VTMacro : NSObject
-+ (BOOL)iPhoneX;
++ (BOOL)vt_iPhoneX;
++ (CGFloat)vt_iStatusBar;
++ (CGFloat)vt_iNaviBar;
 @end
 
 NS_ASSUME_NONNULL_END
